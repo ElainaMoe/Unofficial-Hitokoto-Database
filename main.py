@@ -187,8 +187,8 @@ while True:
         except OSError:
             timeArray = time.localtime(int(data['created_at'])/1000)
             created_at = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
-        if(conf['created_at']): inputs.append(created_at)
-        if(conf['print']): print(res.text)
+        inputs.append(created_at)
+        print(res.text)
         append_csv(path)
         temp.append(data["id"])
         end_Pro=datetime.datetime.now()
