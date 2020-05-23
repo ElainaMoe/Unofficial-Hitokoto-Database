@@ -29,8 +29,7 @@ jobs:
       run: |
         pip install -r requirements.txt
     - name: Read config from secrets  #读取机密
-      run: | 
-        python3 ./main.py    
+      run: python3 ./main.py    
       - name: Test Api #Api调用
     - name: Commit #上传新的refresh_token到仓库
       run: |
