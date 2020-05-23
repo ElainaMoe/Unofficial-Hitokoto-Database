@@ -1,5 +1,5 @@
 # 自动获取最新的一言并保存为文件
-name: Auto Api Secret
+name: AutoFetch
 
 on: 
   release:
@@ -28,11 +28,10 @@ jobs:
     - name: Install requests #安装requests
       run: |
         pip install -r requirements.txt
-    - name: Read config from secrets  #读取机密
+    - name: Spider Start # 启动爬虫
       run: |
-        python3 ./main.py    
-      - name: Test Api #Api调用
-    - name: Commit #上传新的refresh_token到仓库
+        python3 main.py   
+    - name: Commit #上传新的csv到仓库
       run: |
         git config --global user.email bili33@87ouo.top
         git config --global user.name GamerNoTitle
