@@ -33,8 +33,8 @@ jobs:
         python3 main.py   
     - name: Commit #上传新的csv到仓库
       run: |
-        git config --global user.email bili33@87ouo.top
-        git config --global user.name GamerNoTitle
+        git config --global user.email UnofficialHitokotoDatabase@email.com
+        git config --global user.name AutoFetchBot
         git add .
         git commit -m "update Hitokoto database" -a
     - name: Push changes
