@@ -1,0 +1,11 @@
+2020-05-23 22:01:16,352 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): status.hitokoto.cn:443
+2020-05-23 22:01:16,518 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:393] - DEBUG: https://status.hitokoto.cn:443 "GET / HTTP/1.1" 200 None
+2020-05-23 22:01:16,550 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): international.v1.hitokoto.cn:443
+2020-05-23 22:01:38,685 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:393] - DEBUG: https://international.v1.hitokoto.cn:443 "GET / HTTP/1.1" 200 None
+2020-05-23 22:01:38,698 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): international.v1.hitokoto.cn:443
+2020-05-23 22:01:55,146 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:393] - DEBUG: https://international.v1.hitokoto.cn:443 "GET / HTTP/1.1" 200 None
+2020-05-23 22:01:55,189 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): international.v1.hitokoto.cn:443
+2020-05-23 22:01:55,730 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:393] - DEBUG: https://international.v1.hitokoto.cn:443 "GET / HTTP/1.1" 200 None
+2020-05-23 22:01:55,771 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): international.v1.hitokoto.cn:443
+2020-05-23 22:01:58,009 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:393] - DEBUG: https://international.v1.hitokoto.cn:443 "GET / HTTP/1.1" 200 None
+2020-05-23 22:01:58,126 - C:\ProgramData\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:813] - DEBUG: Starting new HTTPS connection (1): international.v1.hitokoto.cn:443
