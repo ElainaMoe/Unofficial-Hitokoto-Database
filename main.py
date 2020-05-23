@@ -59,7 +59,7 @@ dup=0
 all=0   # 总抓取次数
 while True:
     end_timestamp=time.time()
-    if(int(end_timestamp)-int(start_timestamp)>=19800):
+    if(int(end_timestamp)-int(start_timestamp)>=19800): # 因Github Action的运行最长时长为六个小时，故在这里做出判断（五个半小时即停下抓取）
         break
     if(i>num):   # 如果不加1那么最后一次将无法运行
         break
