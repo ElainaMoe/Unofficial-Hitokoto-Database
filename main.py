@@ -215,10 +215,10 @@ except ZeroDivisionError:
 if new:
     try:
         msg='[Unofficial-Hitokoto-Spider]已抓取完成！抓取数量{}，用时{}，总抓取{}次，重复{}次，重复率{}'.format(len(temp)-1,end_Pro-start_Pro,all,dup,dup/all)
-        usedtime=('[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
+        usedtime='[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp)
     except ZeroDivisionError:
         msg='[Unofficial-Hitokoto-Spider]已抓取完成！抓取数量{}，用时{}，总抓取{}次，重复{}次，重复率0'.format(len(temp)-1,end_Pro-start_Pro,all,dup)
-        usedtime='[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
+        usedtime='[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp)
     send(msg)
     send(usedtime)
 else:
