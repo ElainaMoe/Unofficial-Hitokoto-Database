@@ -221,3 +221,6 @@ if new:
         usedtime='[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
     send(msg)
     send(usedtime)
+else:
+    msg='[Unofficial-Hitokoto-Spider]未抓取到任何新内容！'
+    send(msg)
