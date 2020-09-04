@@ -30,7 +30,7 @@ jobs:
         pip install -r requirements.txt
     - name: Spider Start # 启动爬虫
       run: |
-        python3 main.py   
+        python3 main.py ${{ secrets.TELEBOT_TOKEN }} ${{ secrets.CHAT_ID }}
     - name: Commit #上传新的csv到仓库
       run: |
         git config --global user.email AutoFetchBot@email.com
