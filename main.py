@@ -7,7 +7,16 @@ from array import array
 import time
 import logging
 from utils.total import get_total as total
+import sys
+import telepot
 
+new=False
+token=str(sys.argv[1])
+chat_id=str(sys.argv[2])
+bot=telepot.Bot(token)
+
+def send(message):
+    bot.sendMessage(chat_id,message, parse_mode=None, disable_web_page_preview=None, disable_notification=None, reply_to_message_id=None, reply_markup=None)
 # logging.basicConfig(level=logging.INFO,#控制台打印的日志级别
 #                     filename=('./logs/{}.log'.format(time.strftime("%Y-%m-%d %H-%M-%S", time.localtime()) )),
 #                     filemode='a',##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志
@@ -92,6 +101,7 @@ while True:
                 break
             elif(t==len(temp)-1):
                 print("未抓取过的结果，正在存入文件……")
+                new=True
                 if data["type"]== "a": sorts=("Anime")  # 自动把分类码还原为分类
                 elif data["type"]== "b": sorts=("Comic")
                 elif data["type"]== "c": sorts=("Game")
@@ -202,3 +212,12 @@ try:
 except ZeroDivisionError:
     print('已抓取完成！抓取数量{}，用时{}，总抓取{}次，重复{}次，重复率0'.format(len(temp)-1,end_Pro-start_Pro,all,dup))
     print('Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
+if new:
+    try:
+        msg='[Unofficial-Hitokoto-Spider]已抓取完成！抓取数量{}，用时{}，总抓取{}次，重复{}次，重复率{}'.format(len(temp)-1,end_Pro-start_Pro,all,dup,dup/all)
+        usedtime=('[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
+    except ZeroDivisionError:
+        msg='[Unofficial-Hitokoto-Spider]已抓取完成！抓取数量{}，用时{}，总抓取{}次，重复{}次，重复率0'.format(len(temp)-1,end_Pro-start_Pro,all,dup))
+        usedtime='[Unofficial-Hitokoto-Spider]Timestamp: {}/19800'.format(end_timestamp-start_timestamp))
+    send(msg)
+    send(usedtime)
