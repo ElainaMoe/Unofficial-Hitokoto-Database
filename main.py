@@ -222,5 +222,5 @@ if new:
     send(msg)
     send(usedtime)
 else:
-    msg='[Unofficial-Hitokoto-Spider]未抓取到任何新内容！'
+    msg='[Unofficial-Hitokoto-Spider]未抓取到任何新内容！现有数量{}/{}'.format(len(temp)-1,num)
     send(msg)
