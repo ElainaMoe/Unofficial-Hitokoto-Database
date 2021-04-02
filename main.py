@@ -47,7 +47,7 @@ def get_requests():
         return True
 path = 'hitokoto.csv'
 heads = ["id","sort","hitokoto","from", "from_who", "creator", 'creator_uid', 'reviewer', 'uuid', 'created_at']
-num = total()
+num = 9999999 #total() # 因一言的status服务异常 故采取此方法
 temp=array('i',[0])   # 初始化temp变量，用于放置已抓取的ID
 if (os.path.exists(path)!=True):    # 判断文件是否存在，不存在则创建
     create_csv(path)
