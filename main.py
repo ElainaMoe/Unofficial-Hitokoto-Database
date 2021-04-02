@@ -6,7 +6,7 @@ import datetime
 from array import array
 import time
 import logging
-from utils.total import get_total as total
+# from utils.total import get_total as total
 import sys
 import telepot
 
